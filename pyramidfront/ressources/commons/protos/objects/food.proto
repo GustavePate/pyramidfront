@@ -1,0 +1,22 @@
+
+enum PBUnitType {  
+	UNIT_GR = 1;
+    UNIT_PART = 2;
+    UNIT_POT = 3;
+    UNIT_UNITY = 4;
+    UNIT_SLICE = 5;
+    UNIT_ML = 6;
+    UNIT_CAN = 7;
+    UNIT_COFFEE_SPOON = 8;
+    }    
+
+message PBFood {
+	required string id = 1;
+	required string name = 2;
+    required float cal = 3;
+    required float glu = 4;
+    required float pro = 5;
+    required float lip = 6;
+    required string qty = 7;
+    required PBUnitType qty_unit = 8;
+}
