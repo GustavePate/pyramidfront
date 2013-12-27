@@ -1,5 +1,5 @@
 from pyramid.view import view_config
-from pyramid.response import Response
+from pyfront.commons.protos.service import search_food_service_pb2
 
 
 @view_config(route_name='FoodSearch', renderer='json')
@@ -19,5 +19,6 @@ class MyView(object):
 
     def __call__(self):
 
-        #return {'project': 'Iamaclass'}
-        return {'hello:':'hjkl'}
+        return {'project': 'Iamaclass'}
+        #resp = Response('toto')  #{'hello:':'hjkl'}
+        #return resp

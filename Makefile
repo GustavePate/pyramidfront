@@ -9,6 +9,8 @@ PROJECT_PATH=/home/project/git/front/env/pyramidfront
 PROTOPATH=./pyramidfront/ressources/commons/protos
 PROTOPYPATH=./pyramidfront/pyfront/commons/protos/
 
+CLIENTPATH=/home/project/git/distarkcli/
+
 #PYTHON PATH MODIFICATION SHALL BE COPIED TO TRAVIS.YML !!! 
 PROTOC_PY_PATH=${PWD}/$(PROTOPYPATH)
 PYTHONPATH := ${PYTHONPATH}:$(PROTOC_PY_PATH)
@@ -27,6 +29,10 @@ initdep:
 
 test:
 	$(PYTHON) setup.py test -q
+
+CLIENTPATH=/home/project/git/distarkcli/
+getclient:
+	$(PYTHON) $(CLIENTPATH)/setup.py install
 
 clean:
 	find . -type f -name "*.pyc" -exec rm -f {} \;

@@ -8,7 +8,6 @@ setup.cfg
 setup.py
 pyramidfront/__init__.py
 pyramidfront/tests.py
-pyramidfront/views.py
 pyramidfront.egg-info/PKG-INFO
 pyramidfront.egg-info/SOURCES.txt
 pyramidfront.egg-info/dependency_links.txt
@@ -16,6 +15,7 @@ pyramidfront.egg-info/entry_points.txt
 pyramidfront.egg-info/not-zip-safe
 pyramidfront.egg-info/requires.txt
 pyramidfront.egg-info/top_level.txt
+pyramidfront/static/basicform.html
 pyramidfront/static/favicon.ico
 pyramidfront/static/footerbg.png
 pyramidfront/static/headerbg.png
@@ -26,4 +26,8 @@ pyramidfront/static/pyramid-small.png
 pyramidfront/static/pyramid.png
 pyramidfront/static/transparent.gif
 pyramidfront/templates/mytemplate.pt
+pyramidfront/views/FoodSearch.py
+pyramidfront/views/TemplateView.py
 pyramidfront/views/__init__.py
+pyramidfront/views/arg.py
+pyramidfront/views/main.py
