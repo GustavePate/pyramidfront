@@ -16,6 +16,9 @@ PYTHONPATH := ${PYTHONPATH}:$(PROTOC_PY_PATH)
 #  my targets
 ##############################
 
+serve:
+	../bin/pserve --reload development.ini
+
 indent:
 	$(PYTHON) -m reindent --nobackup *.py
 
