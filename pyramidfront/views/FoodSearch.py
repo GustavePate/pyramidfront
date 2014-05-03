@@ -1,5 +1,4 @@
 from pyramid.view import view_config
-from pyfront.commons.protos.service import search_food_service_pb2
 
 
 @view_config(route_name='FoodSearch', renderer='json')
